@@ -19,14 +19,16 @@ const About = () => {
         <section className="c-space my-20" id="about">
             <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
                 <div className="col-span-1 xl:row-span-3">
-                    <div className="grid-container">
-                        <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
+                    <div className="grid-container overflow-hidden">
+                        <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] object-cover rounded-xl" />
 
                         <div>
                             <p className="grid-headtext">Hi, I’m Reimo Namm</p>
                             <p className="grid-subtext">
-                                I’m a passionate developer with a year of hands-on coding experience, studying at Kood/Jõhvi.
-                                I enjoy crafting digital solutions that make a difference, with a keen interest in exploring new technologies like Three.js and React.
+                                I have been a full-time musician for seven years. A little over a year ago, I decided to explore new seas in my life.
+                                I found my way into IT, and now I’m a student at Kood/Jõhvi programming school, where I’m learning to become a full-stack developer.
+                                The innovative peer-to-peer learning style at Kood/Jõhvi suits me well, and I love the idea that any problem can be solved with a bit of help from the almighty Internet.
+                                I am ready to embrace with open arms any opportunities and challenges the developer world has to offer.
                             </p>
                         </div>
                     </div>
@@ -39,8 +41,8 @@ const About = () => {
                         <div>
                             <p className="grid-headtext">Tech Stack</p>
                             <p className="grid-subtext">
-                                I’ve honed my skills in languages and frameworks such as Golang, JavaScript, Express, React, SQL, and more.
-                                My journey so far has focused on building intuitive, responsive websites and applications with a strong emphasis on modern web standards.
+                                I specialize in building full-stack applications using technologies like JavaScript, React, Express, Tailwind, SQL, and more. My goal is to create seamless, user-friendly experiences that meet modern web standards.
+                                Whether it's creating a new website, improving an existing one, or developing a custom application, I’m well-versed in both front-end and back-end technologies to bring your vision to life.
                             </p>
                         </div>
                     </div>
@@ -65,7 +67,10 @@ const About = () => {
                             <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
                             <p className="grid-subtext">I’m based in Tartu, Estonia, but I’m open to collaborating with teams or clients across the globe.
                                 I thrive in flexible, remote work environments and am always ready to adapt to different time zones.</p>
-                            <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+                            <a href="#contact">
+                                <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -77,8 +82,11 @@ const About = () => {
                         <div>
                             <p className="grid-headtext">My Passion for Coding</p>
                             <p className="grid-subtext">
-                                My passion for coding keeps me on a continuous learning path. I’m eager to take on new challenges, improve my skills,
-                                and explore innovative ways to solve problems through code. I’m open to any project, big or small, that helps me grow as a developer.
+                                I’m a creative and disciplined person—two qualities that may not always seem to align, but in coding,
+                                I’ve found the perfect balance. I’ve always loved building things, and now that I’m immersed in the world of IT,
+                                I’m channeling the creativity I once used for music into crafting well-structured, efficient code.
+                                Every new challenge is an opportunity to learn, grow, and create something meaningful.
+                                I’m excited to take on projects that push my skills further and allow me to bring innovative ideas to life through development.
                             </p>
                         </div>
                     </div>

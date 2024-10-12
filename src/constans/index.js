@@ -11,8 +11,8 @@ export const navLinks = [
     },
     {
         id: 3,
-        name: 'Work',
-        href: '#work',
+        name: 'My-Work',
+        href: '#my-work',
     },
     {
         id: 4,
@@ -58,6 +58,47 @@ export const clientReviews = [
 
 export const myProjects = [
     {
+        title: 'Developer Portfolio - Built with React & Three.js',
+        desc: 'This portfolio showcases my journey as a developer, featuring interactive 3D elements' +
+            ' using Three.js and a responsive design powered by React. ' +
+            'It is the largest front-end project I have built so far, reflecting my skills in modern web development.',
+        subdesc:
+            'Through this project, I’ve combined creativity and technical skills to build an engaging portfolio that highlights my work.' +
+            ' The use of Three.js for dynamic 3D components, paired with a clean and responsive UI,' +
+            ' demonstrates my ability to deliver interactive web experiences.',
+        href: 'https://www.reimonamm.com',
+        texture: '/textures/project/project2.mp4', // Adjust if needed
+        logo: '/assets/project-logo2.png',
+        logoStyle: {
+            backgroundColor: '#13202F',
+            border: '0.2px solid #17293E',
+            boxShadow: '0px 0px 60px 0px #2F6DB54D',
+        },
+        spotlight: '/assets/spotlight2.png',
+        tags: [
+            {
+                id: 1,
+                name: 'React.js',
+                path: '/assets/react.svg',
+            },
+            {
+                id: 2,
+                name: 'TailwindCSS',
+                path: 'assets/tailwindcss.png',
+            },
+            {
+                id: 3,
+                name: 'Javascript',
+                path: '/assets/javascript.png',
+            },
+            {
+                id: 4,
+                name: 'ThreeJS',
+                path: '/assets/threejs.png',
+            },
+        ],
+    },
+    {
         title: 'River - Music Production and Co-Writer',
         desc: 'I produced this track from start to finish, playing all the guitar parts and overseeing the entire creative process. There’s also a music video for the song, ' +
             'and you can listen to it along with other samples of my sound design' +
@@ -68,9 +109,9 @@ export const myProjects = [
         texture: '/textures/project/project1.mp4',
         logo: '/assets/project-logo1.png',
         logoStyle: {
-            backgroundColor: '#2A1816',
-            border: '0.2px solid #36201D',
-            boxShadow: '0px 0px 60px 0px #AA3C304D',
+            backgroundColor: '#502924',
+            border: '0.2px solid #6B3A34',
+            boxShadow: '0px 0px 60px 0px #FF6B5E4D',
         },
         spotlight: '/assets/spotlight1.png',
         tags: [
@@ -96,48 +137,13 @@ export const myProjects = [
             },
         ],
     },
+
     {
-        title: 'LiveDoc - Real-Time Google Docs Clone',
-        desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+        title: 'More projects coming soon...',
+        desc: 'I’m working on my side projects every day and will be sharing them here soon.',
         subdesc:
-            'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-        href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-        texture: '/textures/project/project2.mp4',
-        logo: '/assets/project-logo2.png',
-        logoStyle: {
-            backgroundColor: '#13202F',
-            border: '0.2px solid #17293E',
-            boxShadow: '0px 0px 60px 0px #2F6DB54D',
-        },
-        spotlight: '/assets/spotlight2.png',
-        tags: [
-            {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
-            },
-            {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
-            },
-            {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
-            },
-        ],
-    },
-    {
-        title: 'CarePulse - Health Management System',
-        desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
-        subdesc:
-            'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
+            'While I can’t publicly display the projects I’ve developed as part of my studies at Kood/Jõhvi, I’d be happy to show them personally if you’re interested. ' +
+            'Stay tuned for more updates!',
         href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
         texture: '/textures/project/project3.mp4',
         logo: '/assets/project-logo3.png',

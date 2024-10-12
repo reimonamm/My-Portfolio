@@ -64,9 +64,14 @@ const Music = () => {
 
     return (
         <section className="c-space my-20">
-            <p className="head-text">Music Production Examples</p>
-            <p className="text-white-600 py-5">Here are snippets of songs and sound designs that I’ve
-                produced and mostly written myself, with a few featuring co-authorship.</p>
+            <p className="head-text py-5">Music Production Examples</p>
+            <div className="grid-container bg-gray-900 p-5 rounded-lg border border-yellow-500 shadow-yellow-500/50">
+                <p className="text-white-600 py-2 text-center">
+                    Here are snippets of songs and sound designs that I’ve produced and mostly written myself, with a
+                    few featuring co-authorship.
+                </p>
+            </div>
+
             <Canvas style={{height: '40vh', width: '100%'}}>
                 <PerspectiveCamera makeDefault position={[0, 2.3, 1.5]} rotation={[-Math.PI / 3, 0, 0]}
                                    fov={45}/> {/* Move camera closer */}
@@ -75,7 +80,7 @@ const Music = () => {
                 <directionalLight position={[10, 10, 5]} intensity={1}/>
 
                 <Center>
-                    <Suspense fallback={<CanvasLoader />}>
+                    <Suspense fallback={<CanvasLoader/>}>
                         <Cassette
                             targetRotationY={targetRotationY}
                             position={[0, -1, 0]}
@@ -87,7 +92,7 @@ const Music = () => {
             </Canvas>
 
             <div className="flex justify-center mb-4">
-                <div className="py-2 px-5 rounded-full text-center" style={{ backgroundColor: 'rgb(174, 170, 87)' }}>
+                <div className="py-2 px-5 rounded-full text-center" style={{backgroundColor: 'rgb(174, 170, 87)'}}>
                     <p className="text-black-300 text-xl font-semibold">{songs[currentSongIndex].path.split('/').pop().replace('.mp3', '')}</p>
                 </div>
             </div>
@@ -99,11 +104,13 @@ const Music = () => {
                     <img src="/assets/previous.svg" alt="Previous" className="w-20 h-20 filter invert brightness-75"/>
                 </button>
 
-                <button onClick={isPlaying ? handlePause : handlePlay} className="focus:outline-none hover:scale-105 transition-transform duration-200">
+                <button onClick={isPlaying ? handlePause : handlePlay}
+                        className="focus:outline-none hover:scale-105 transition-transform duration-200">
                     <img src="/assets/paus.svg" alt="Pause" className="w-20 h-20 filter invert brightness-75"/>
                 </button>
 
-                <button onClick={handlePlay} className="focus:outline-none hover:scale-105 transition-transform duration-200">
+                <button onClick={handlePlay}
+                        className="focus:outline-none hover:scale-105 transition-transform duration-200">
                     <img src="/assets/play.svg" alt="Play" className="w-20 h-20 filter invert brightness-75"/>
                 </button>
 
@@ -113,7 +120,7 @@ const Music = () => {
                          className="w-20 h-20 filter invert rotate-180 brightness-75"/>
                 </button>
             </div>
-            <div className="py-5" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div className="py-5" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <AudioVisualizer audioRef={audioRef} audioContext={audioContext}></AudioVisualizer>
             </div>
 

@@ -8,6 +8,7 @@ import Footer from "./sections/Footer.jsx";
 import Music from "./sections/Music.jsx";
 import Terms from "./sections/Terms.jsx";
 import Privacy from "./sections/Privacy.jsx";
+import Gallery from "./sections/Gallery.jsx";
 
 const App = () => {
     return (
@@ -20,6 +21,7 @@ const App = () => {
                         <About />
                         <Projects />
                         <Music />
+                        <Gallery></Gallery>
                         <Contact />
                         <Footer />
                     </main>

@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        generalsans: ['General Sans', 'sans-serif'],
-        signature: ['Allura', 'cursive'],  // Add the Pacifico font for the signature effect
+        generalsans: ['Libre Bodoni', 'sans-serif'],
+        signature: ['Libre Bodoni', 'cursive'],  // Add the Pacifico font for the signature effect
       },
       colors: {
         black: {

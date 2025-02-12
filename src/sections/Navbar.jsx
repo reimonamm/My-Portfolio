@@ -18,7 +18,7 @@ const NavItems = () =>{
 const Navbar = () => {
 
     //State for hamburger menu
-    const [isOpen, setIsOpen] =useState(true);
+    const [isOpen, setIsOpen] =useState(false);
     const toggleMenu = () => setIsOpen(prevIsOpen => !prevIsOpen);
 
     return (

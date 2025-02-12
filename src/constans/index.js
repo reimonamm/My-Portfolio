@@ -58,6 +58,45 @@ export const clientReviews = [
 
 export const myProjects = [
     {
+        title: 'Interactive 3D Website',
+        desc: 'I built a interactive 3D website from scratch using Blender and different 3D JS libraries',
+        subdesc:
+            'Feel free to explore the page on desktop or mobile and take a look at its different features. You can also take a look at the source code from my GitHub page. '
+        ,
+        href: 'https://www.bossenova.ee',
+        texture: '/textures/project/projectBOSSE.mp4',
+        logo: '/assets/logo_ruut.jpg',
+        logoStyle: {
+            backgroundColor: '#60f5a1',
+            background: 'transparent',
+
+
+        },
+        spotlight: '/assets/spotlight3.png',
+        tags: [
+            {
+                id: 1,
+                name: 'React.js',
+                path: '/assets/react.svg',
+            },
+            {
+                id: 2,
+                name: 'TailwindCSS',
+                path: 'assets/tailwindcss.png',
+            },
+            {
+                id: 3,
+                name: 'TypeScript',
+                path: '/assets/typescript.png',
+            },
+            {
+                id: 4,
+                name: 'ThreeJS',
+                path: '/assets/threejs.png',
+            },
+        ],
+    },
+    {
         title: 'Developer Portfolio - Built with React & Three.js',
         desc: 'This portfolio showcases my journey as a developer, featuring interactive 3D elements' +
             ' using Three.js and a responsive design powered by React. ' +
@@ -138,46 +177,7 @@ export const myProjects = [
         ],
     },
 
-    {
-        title: 'More projects coming soon...',
-        desc: 'I’m working on my side projects every day and will be sharing them here soon.',
-        subdesc:
-            'While I can’t publicly display the projects I’ve developed as part of my studies at Kood/Jõhvi, I’d be happy to show them personally if you’re interested. ' +
-            'Stay tuned for more updates!',
-        href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-        texture: '/textures/project/project3.mp4',
-        logo: '/assets/project-logo3.png',
-        logoStyle: {
-            backgroundColor: '#60f5a1',
-            background:
-                'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-            border: '0.2px solid rgba(208, 213, 221, 1)',
-            boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
-        },
-        spotlight: '/assets/spotlight3.png',
-        tags: [
-            {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
-            },
-            {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
-            },
-            {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
-            },
-        ],
-    },
+
 
 ];
 
